@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson Git IT Doctor</title>
   </head>
+  <style>
+    .wrapper{
+      padding: 50px 100px 50px 100px;
+    }
+    li{
+      cursor: help
+    }
+  </style>
   <body>
-    <h1>Урок по Git end Git-Hub</h1>
-    <p>Добавление тега для нового commit</p>
+    <div class="wrapper">
+
+      <h1>Урок по Git end Git-Hub</h1>
+      <p>Добавление тега для нового commit</p>
     <p>
       Для первого входа в сохранение данных на Git end Git-Hub нужно внести
       команды:
@@ -61,7 +71,7 @@
       репозиторий который мы создали.
     </p>
     <h4>Создание репозитория и запись из Git файла в Git-Hub выполненно</h4>
-
+    
     <h2>Удаление репозитория</h2>
     <p>
       Удаление репозитория Git-Hub выполняется непосредственно в самом
@@ -139,11 +149,11 @@
     </p>
     <pre>
       [alias]
-        s = status --short
-        l = log --oneline --graph --decorate --all
-	g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)  %aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C  (reset)'
-	br = branch
-	co = checkout
+      s = status --short
+      l = log --oneline --graph --decorate --all
+      g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)  %aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C  (reset)'
+      br = branch
+      co = checkout
     </pre>
     <p>
       После этого мы можем в терминали писать
@@ -156,8 +166,16 @@
       </pre>
     </p>
     <h3>4.10 Отмена изменений</h3>
-    <p>Сохраненное изменение в Файле html можно отменить в Граф.инт. стрелочкой на кнопке "Изменения"</p>
-    <p>Так же можно отменить через Меню 3 точки- Изменения- Отменить все изменения.</p>
-    
+    <p>Сохраненное изменение в Файле html можно <u>отменить в Граф.инт.</u> стрелочкой на кнопке "Изменения"</p>
+    <p>Так же можно <u>отменить</u> через <u>Меню 3 точки</u>- Изменения- Отменить все изменения.</p>
+    <p>Так же можно <u>отменить</u> изменения <u>в ком.стр.</u> написав: 
+      <ul>
+        <li title="новая команда для ком.стр."><b>"git checkout -- ."</b> - отм.изм. во всех файлах</li>
+        <li><b>"git checkout -- index.html"</b> - отм.изм. в файле index.html</li>
+        <li href="#" title="новая команда для ком.стр.">ffffff</li>
+      </ul>
+      Важно учитывать что есть пробелы,перед дефис и после.
+    </p>
+    </div>
   </body>
 </html>
